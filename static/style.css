@@ -1,0 +1,86 @@
+/* 🌸 ANIME PINK THEME by Saira Shakeel */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background-image: url('https://i.pinimg.com/originals/e9/2e/3b/e92e3b7999b91f00e7df9d19a6671f10.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Name-Page {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    background: rgba(255, 192, 203, 0.25); /* translucent pink */
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(255, 20, 147, 0.5);
+    backdrop-filter: blur(10px);
+    border: 2px solid #ffc0cb;
+}
+
+.form {
+    position: relative;
+    text-align: center;
+}
+
+.form input {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ff69b4;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: white;
+    outline: none;
+    backdrop-filter: blur(5px);
+}
+
+.form input::placeholder {
+    color: #ffd6e7;
+    font-weight: 300;
+}
+
+.form button {
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form button:hover {
+    background-color: #e91e63;
+    transform: scale(1.05);
+}
+
+.form p {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.form a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.form .unknown-form {
+    display: none;
+}

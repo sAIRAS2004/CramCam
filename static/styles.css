@@ -1,0 +1,174 @@
+/* 🌸 CramCam Study Room – Anime Pink Theme by Saira */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #ffe6f0, #ffc0cb, #ffd6e7);
+    overflow: hidden;
+}
+
+/* 📹 VIDEO AREA */
+#video-grids {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    overflow-y: auto;
+    background: transparent;
+}
+
+.video-grid {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 0 25px rgba(255, 20, 147, 0.3);
+}
+
+video {
+    border: 5px solid #ff69b4;
+    border-radius: 25px;
+    object-fit: cover;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    font-size: 16px;
+    color: #ffffff;
+    text-shadow: 0 0 5px deeppink;
+}
+
+/* 🎮 LAYOUT */
+.mainclone {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.main_left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_right {
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 182, 193, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* 🎀 CONTROLS */
+.main_controls {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 105, 180, 0.9);
+    color: white;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.main_controls_block {
+    display: flex;
+    gap: 10px;
+}
+
+.main_controls_button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    min-width: 80px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffb6c1;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 500;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.main_controls_button:hover {
+    background-color: deeppink;
+    transform: scale(1.05);
+}
+
+/* 🚪 LEAVE BUTTON */
+.leave_red {
+    background-color: #ff3366 !important;
+    color: white !important;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+/* 💬 CHAT */
+.main__chat_window {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.message {
+    color: white;
+    list-style-type: none;
+    border: 2px solid #ff69b4;
+    background-color: rgba(255, 182, 193, 0.3);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.main__message_container {
+    padding: 20px 15px;
+    display: flex;
+    background-color: rgba(255, 182, 193, 0.2);
+    border-top: 2px solid #ffc0cb;
+}
+
+.main__message_container input {
+    flex-grow: 1;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.main_right_header {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 2px solid #ffc0cb;
+    font-weight: bold;
+    animation: rainbow 20s linear infinite;
+    background-image: linear-gradient(to right, #ff69b4, #ffd6e7, #ffc0cb, #ff69b4);
+    background-size: 500% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 100%; }
+    50% { background-position: 100% 0%; }
+    100% { background-position: 0% 100%; }
+}

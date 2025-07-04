@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CramCam – Study Together</title>
+
+  <!-- Correct relative path for Express static middleware -->
+  <link rel="stylesheet" href="/public/style.css" />
+
+  <!-- jQuery for the toggle animation -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Optional: Aesthetic favicon -->
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/616/616408.png" type="image/png" />
+</head>
+
+<body>
+  <div class="Name-Page">
+    <div class="form">
+
+      <!-- Host a new study session -->
+      <form class="known-form" action="/join">
+        <input type="text" placeholder="Enter your name" name="name" required />
+        <button type="submit">Start Study Session</button>
+        <p><a href="javascript:show()">Already have a session?</a></p>
+      </form>
+
+      <!-- Join an existing session -->
+      <form class="unknown-form" action="/joinold">
+        <input type="text" placeholder="Enter your name" name="name" required />
+        <input type="text" placeholder="Enter CramCam Session ID" name="meeting_id" required />
+        <button type="submit">Join Study Session</button>
+        <p><a href="javascript:show()">Create new session?</a></p>
+      </form>
+
+    </div>
+  </div>
+
+  <script>
+    function show() {
+      $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
+    }
+  </script>
+</body>
+
+</html>
